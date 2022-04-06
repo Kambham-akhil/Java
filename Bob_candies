@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Bob_candies {
+
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		int count;
+		while(T!=0)
+		{
+			count=0;
+			int a=sc.nextInt();
+			int b=sc.nextInt();
+			T--;
+			while(a>=0&&b>=0)
+			{
+				count++;
+				a=a-count;
+				count++;
+				b=b-count;
+			}
+			if(a>=0)
+			{
+				System.out.println("limak");
+			}
+			else
+			{
+				System.out.println("bob");
+			}
+		}
+		sc.close();
+	}
+
+}
